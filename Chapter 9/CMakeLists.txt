@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.22)
+project(Chapter09)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_COMPILER g++)
+set(CMAKE_CXX_FLAGS "-std=c++23 -Wall -Wextra -Werror -Wpedantic -Wno-missing-field-initializers")
+set(CMAKE_VERBOSE_MAKEFILE on)
+
+add_executable(condition_var condition_var.cpp)
+add_executable(coop_cancellation coop_cancellation.cpp)
+add_executable(cycle_break cycle_break.cpp)
+add_executable(hardware_interference_example hardware_interference_example.cpp)
+add_executable(lazy_init lazy_init.cpp)
+add_executable(read_write_lock read_write_lock.cpp)
+add_executable(shared_mem_sp shared_mem_sp.cpp)
+add_executable(smart_pointers smart_pointers.cpp)
+add_executable(ticket_lock ticket_lock.cpp)
+

@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.22)
+project(Chapter10)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_COMPILER g++)
+set(CMAKE_CXX_FLAGS "-std=c++23 -Wall -Wextra -Werror -Wpedantic")
+set(CMAKE_VERBOSE_MAKEFILE on)
+
+add_executable(coroutine_socket coroutine_socket.cpp)
+add_executable(coroutines coroutines.cpp)
+add_executable(shmem_coroutines shmem_coroutines.cpp)
